@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Interactive2 </title>
+        <link rel="stylesheet" href="css/styles.css">
+    </script> 
+    </head>
+    <body>
+        <div class="dice-container">                
+                <div class="dice">
+                    <h3 id="greeting">Player1 </h3>
+                    <img class="img1" src="images/dice6.png">
+                </div>
+                <div class="dice">
+                    <h3 id="storedName">Player 2</h3>
+                    <img class="img2" src="images/dice6.png">
+                </div>
+
+                <div class="dice">
+                    <button onclick="dice1()" class="btn">Roll Dice1</button>
+                </div>
+
+                <div class="dice">
+                    <button onclick="dice2()" class="btn">Roll Dice2</button>
+                </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/dice/dice1-white.png"  id="changeDice" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/1.png" id="changeImageQustion" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/2.png" id="changeImageQustion2" alt="">
+            </div>  
+            <div class="grid-item">
+                <img src="images/qustions/3.png" id="changeImageQustion3" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/4.png" id="changeImageQustion4" alt="">
+
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/tent.png" alt="">
+            </div>  
+            <div class="grid-item">
+                <!-- <input type="submit" id="myBtn" value="Submit" onclick="myFunction()"> -->
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q1-1">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q1-2">
+            </div>  
+            <div class="grid-item">
+                <input type="number" class="shift" id="q1-3">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q1-4">
+            </div>
+            <div class="grid-item" id="showAnswer"></div> 
+        </div>
+
+        <!-- row 2 -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/dice/dice3-white.png"  id="changeDiceRow2" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/5.png" id="changeImageQustion5" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/6.png" id="changeImageQustion6" alt="">
+            </div>  
+            <div class="grid-item">
+                <img src="images/qustions/7.png" id="changeImageQustion7" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/8.png" id="changeImageQustion8" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/tent.png" alt="">
+            </div>  
+            <div class="grid-item">
+                <!-- <input type="submit" id="myBtn" value="Submit" onclick="myFunction()"> -->
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q2-1">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q2-2">
+            </div>  
+            <div class="grid-item">
+                <input type="number" class="shift" id="q2-3">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q2-4">
+            </div>
+            <div class="grid-item" id="showAnswer"></div> 
+        </div>
+
+        <!-- row 3 -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/dice/dice4-white.png"  id="changeDiceRow3" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/9.png" id="changeImageQustion9" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/10.png" id="changeImageQustion10" alt="">
+            </div>  
+            <div class="grid-item">
+                <img src="images/qustions/11.png" id="changeImageQustion11" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/12.png" id="changeImageQustion12" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/tent.png" alt="">
+            </div>  
+            <div class="grid-item">
+                <!-- <input type="submit" id="myBtn" value="Submit" onclick="myFunction()"> -->
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q3-1">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q3-2">
+            </div>  
+            <div class="grid-item">
+                <input type="number" class="shift" id="q3-3">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q3-4">
+            </div>
+            <div class="grid-item" id="showAnswer"></div> 
+        </div>
+
+        <!-- row 4 -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/dice/dice6-white.png"  id="changeDiceRow4" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/13.png" id="changeImageQustion13" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/14.png" id="changeImageQustion14" alt="">
+            </div>  
+            <div class="grid-item">
+                <img src="images/qustions/15.png" id="changeImageQustion15" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/16.png" id="changeImageQustion16" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="images/qustions/tent.png" alt="">
+            </div>  
+            <div class="grid-item">
+                <!-- <input type="submit" id="myBtn" value="Submit" onclick="myFunction()"> -->
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q4-1">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q4-2">
+            </div>  
+            <div class="grid-item">
+                <input type="number" class="shift" id="q4-3">
+            </div>
+            <div class="grid-item">
+                <input type="number" class="shift" id="q4-4">
+            </div>
+            <div class="grid-item" id="showAnswer"></div> 
+        </div>
+          
+          <script src="js/final-test.js"></script>
+    </body>
+</html>
